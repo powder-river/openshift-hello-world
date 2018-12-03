@@ -1,0 +1,5 @@
+{
+  "name": "openshift-hello-world",
+  "private": true,
+  "dependencies": {}
+}
