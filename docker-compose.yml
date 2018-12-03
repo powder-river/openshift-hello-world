@@ -2,6 +2,7 @@ version: '3'
 services:
   webapp:
     build: .
+    image: idms-git-registry.oit.duke.edu/da129/openshift-hello-world
     volumes:
      - .:/application
     ports: ['3000:3000','3001:3001']
