@@ -4,7 +4,7 @@ volumes:
 services:
   webapp:
     build: .
-    image: idms-git-registry.oit.duke.edu/da129/openshift-hello-world
+    image: idms-git-registry.oit.duke.edu/da129/openshift-hello-world 
     volumes:
      - .:/application
      - tmp:/tmp
