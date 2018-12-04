@@ -1,26 +1,6 @@
-apiVersion: v1
-kind: ImageStream
+apiVersion: "v1"
+kind: "ImageStream"
 metadata:
-  generation: 1
-  labels:
-    app: ruby-sample-build
-    template: application-template-stibuild
-  name: origin-ruby-sample
-  namespace: test
-  resourceVersion: "633"
-  selflink: /oapi/v1/namespaces/test/imagestreams/origin-ruby-sample
-  uid: ee2b9405-c68c-11e5-8a99-525400f25e34
-spec: {}
-status:
-  dockerImageRepository: 172.30.56.218:5000/test/origin-ruby-sample
-  tags:
-  - items:
-- created: 2017-09-02T10:15:09Z
-      dockerImageReference: 172.30.56.218:5000/test/origin-ruby-sample@sha256:47463d94eb5c049b2d23b03a9530bf944f8f967a0fe79147dd6b9135bf7dd13d
-      generation: 2
-      image: sha256:909de62d1f609a717ec433cc25ca5cf00941545c83a01fb31527771e1fab3fc5
-    - created: 2017-09-29T13:40:11Z
-      dockerImageReference: 172.30.56.218:5000/test/origin-ruby-sample@sha256:909de62d1f609a717ec433cc25ca5cf00941545c83a01fb31527771e1fab3fc5
-      generation: 1
-      image: sha256:47463d94eb5c049b2d23b03a9530bf944f8f967a0fe79147dd6b9135bf7dd13d
-    tag: latest
+  name: "corgi-custom"
+spec:
+  dockerImageRepository: "idms-git-registry.oit.duke.edu/da129/openshift-hello-world"
