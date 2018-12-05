@@ -1,0 +1,24 @@
+{
+  "kind": "BuildConfig",
+    "apiVersion": "v1",
+    "metadata": {
+      "name": "corgi-custom-build"
+    },
+  "spec": {
+    "source": {
+      "type": "Git",
+      "git": {
+        "uri": "https://idms-git.oit.duke.edu/da129/openshift-hello-world.git"
+      }
+    },
+    "strategy": {
+      "type": "Docker",
+    },
+    "output": {
+      "to": {
+        "kind": "ImageStreamTag",
+        "name": "corgi-custom:latest"
+      }
+    }
+  }
+}
