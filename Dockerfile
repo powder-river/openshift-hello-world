@@ -6,9 +6,9 @@ RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
 
 ### Install Application
 RUN mkdir application
-WORKDIR application
-ADD Gemfile.lock .
-ADD Gemfile .
+WORKDIR application.
+
+RUN git clone git@idms-git.oit.duke.edu:da129/openshift-hello-world.git
 RUN gem install bundler && bundle install
 ADD . ./
 
